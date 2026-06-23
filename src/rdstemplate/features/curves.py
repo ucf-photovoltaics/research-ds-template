@@ -16,7 +16,7 @@ class CurveAUC(FeatureExtractor):
             return {}
         x = data.iloc[:, 0].to_numpy(dtype=float)
         y = data.iloc[:, 1].to_numpy(dtype=float)
-        auc = float(np.trapz(y, x))
+        auc = float(np.trapezoid(y, x))
         return {
             "curve_auc__auc": auc,
             "curve_auc__y_max": float(y.max()),
