@@ -1,0 +1,56 @@
+# Pipeline outputs
+outputs/
+
+# Data (only data/sample/ is committed)
+data/
+!data/sample/
+!data/sample/**
+
+# Credentials and secrets
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+*credentials*
+*secret*
+token.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+.venv/
+venv/
+env/
+
+# Unsafe serialization formats (use Parquet/npz instead)
+*.pkl
+*.pickle
+
+# Jupyter / notebook
+.ipynb_checkpoints/
+*.ipynb.bak
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Pre-commit
+.pre-commit-cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
